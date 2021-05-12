@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+    <!-- Header LOL -->
+
+    <header class="request_header">
+        <h1>SUBMIT YOUR REQUEST</h1>
+        <h3>Please fill out the form below.</h3>
+    </header>
+
+    
+
+    <form class="request_form">
+
+        <!-- Address input field -->
+
+        <fieldset class="input_fields">
+            <legend class="input_legend">Address:</legend>
+            <input type="email" name="email" placeholder="Email" required>
+        </fieldset>
+
+        <!-- Choose your Style Radio Selection -->
+
+        <fieldset class="styles" id="selected">
+            <legend>Choose your style:</legend>
+            <div class="radio_selection">
+                <div class="description">
+                    <p>Classic - $3</p>
+                    <p>This is a classic treament</p>
+                </div>
+                <input type="radio" id="classic" name="style" onchange="priceUpdate()" value="3">
+            </div>
+
+            <div class="radio_selection">
+                <div class="description">
+                    <p>Premium - $5</p>
+                    <p>pinky's up</p>
+                </div>
+                <input type="radio" id="premium" name="style" onchange="priceUpdate()" value="5">
+            </div>
+
+            <div class="radio_selection">
+                <div class="description">
+                    <p>Royal - $10</p>
+                    <p>Your food is served on a platter. Literally</p>
+                </div>
+                <input type="radio" id="royal" name="style" onchange="priceUpdate()" value="10">
+            </div>
+        </fieldset>
+
+        <!-- Restaurant input field -->
+
+        <fieldset class="input_fields">
+            <legend class="input_legend">Restaurant:</legend>
+            <input type="text" name="name" placeholder="Name" required>
+        </fieldset>
+
+        <!-- Choose Tip Amount Selection -->
+
+        <fieldset class="styles" id="selected_tip">
+            <legend>Tip:</legend>
+            <div class="radio_selection">
+                <div class="description">
+                    <p>10%</p>
+                    <p>They did their job</p>
+                </div>
+                <input type="radio" id="ten" name="tip" onchange="priceUpdate()" value=".1">
+            </div>
+
+            <div class="radio_selection">
+                <div class="description">
+                    <p>15%</p>
+                    <p>They made you feel special</p>
+                </div>
+                <input type="radio" id="fifteen" name="tip" onchange="priceUpdate()" value=".15">
+            </div>
+
+            <div class="radio_selection">
+                <div class="description">
+                    <p>20%</p>
+                    <p>I wanna give them more, but this all I have!</p>
+                </div>
+                <input type="radio" id="twenty" name="tip" onchange="priceUpdate()" value=".2">
+            </div>
+        </fieldset>
+    </form>
+
+    <!-- Request Button -->
+
+    <div class="request">
+        <div class="total">
+            <p id="final_price"></p>
+            <button id="btn">REQUEST</button>
+        </div>
+    </div>
+
+    <footer>
+
+        <table class="footer_table">
+            <tr>
+                <td>
+                    <h3>Site Map</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="about.html">How It All Works</a></li>
+                     </ul>
+                </td>
+                <td>
+                    <h3>Legal</h3>
+                    <p>Privacy & Policy</p>
+                    <p>Terms & Conditions</p>
+                </td>
+                <td>
+                    <h3>Food Is Life :)</h3>
+                </td>
+            </tr>
+        </table>
+
+        <p class="legal_stuff">Foodar &copy; copyright 2021</p>
+
+    </footer>
+
+    <script src="total.js"></script>
+
+</body>
+</html>

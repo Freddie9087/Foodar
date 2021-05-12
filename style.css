@@ -1,0 +1,329 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+fieldset {
+    height: 200px;
+    width: 100px;
+    border: none;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+input {
+    padding: 0 5px;
+    margin: 10px 0;
+}
+
+                                                            /* Home */
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+}
+
+.nav_links {
+    /* border: solid black 2px; */
+    width: 25%;
+    text-align: center;
+    padding: 35px 0;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: #131313;
+}
+
+section {
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    line-height: 750px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.img_container {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    height: 400px;
+    width: 75%;
+    margin: 0px auto;
+}
+
+.img {
+    height: 300px;
+    width: 300px;
+    float: left;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.coupon {
+    position: relative;
+    /* background-color: brown; */
+    height: 50px;
+    width: 50%;
+    bottom: 50px;
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.2rem;
+    border: dashed black 2px;
+}
+
+.temp {
+    position: relative;
+    background-color: beige;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#temp1 {
+    background-image: url(FoodarPics/rest-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 500px;
+}
+
+#temp2 {
+    background-image: url(FoodarPics/rest-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 500px;
+}
+
+#temp3 {
+    background-image: url(FoodarPics/rest-3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 500px;
+}
+
+.zipcode_finder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    /* background-color: blanchedalmond; */
+}
+
+.zipcode_content {
+    /* background-color: burlywood; */
+    text-align: center;
+    line-height: 30px;
+}
+
+#go_btn{
+    margin-left: 3px;
+    font-size: 1.3rem;
+}
+
+#text_input {
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+                                                            /* About */
+
+.header_about {
+    text-align: center;
+    /* background-color: aqua; */
+    font-size: 3rem;
+    height: 80px;
+    border-bottom: solid dimgray 2px;
+}
+
+.instructions {
+    width: 57%;
+    /* background-color: aqua; */
+    border-spacing: 0px 50px;
+    margin: auto;
+    height: 600px;
+    margin-bottom: 250px;
+}
+
+td {
+    text-align: center;
+    /* border: solid black 2px; */
+    line-height: 2.2rem;
+    font-size: 1.1rem;
+}
+
+                                                            /* Request */
+
+.request_header {
+    width: 50%;
+    margin: 20px auto;
+    line-height: 3rem;
+    text-align: center;
+}
+
+legend {
+    font-size: 1.5rem;
+    position: relative;
+    right: 80px;
+    bottom: 30px;
+}
+
+.input_legend {
+    top: 0px;
+}
+
+.input_fields input{
+    width: 60%;
+    height: 30px;
+    margin: auto 0 100px;
+}
+
+.request_form fieldset {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blanchedalmond; */
+    width: 50%;
+    height: 200px;
+    margin: 50px auto;
+    padding: 0px 50px;
+}
+
+.styles .radio_selection {
+    border: solid #131313 2px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.styles input {
+    display: block;
+    margin: auto;
+}
+
+.description {
+    /* border: solid red 2px; */
+    padding-top: 10px;
+    height: 110px;
+}
+
+.request {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: burlywood; */
+    height: 200px;
+}
+
+.total {
+    width: 200px;
+    height: 200px;
+    /* background-color: red; */
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+.total p {
+    margin-bottom: 20px;
+}
+
+.total button {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+                                                            /* Register */
+
+.reg_header {
+    margin-left: 5%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.register_form {
+    /* background-color: brown; */
+    width: 25%;
+    height: 650px;
+    margin-left: 5%;
+
+}
+
+.field {
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.field label {
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+}
+
+.field input {
+    height: 30px;
+    margin: 5px auto;
+    font-size: 1.3rem;
+}
+
+.register_form button {
+    position: relative;
+    left: 30px;
+    font-size: 1.3rem;
+}
+
+                                                            /* Footer */
+
+footer {
+    width: 100%;
+    height: 500px;
+    background-color: #131313;
+    color: #fff;
+}
+
+.footer_table {
+    width: 100%;
+    /* background-color: dimgray; */
+}
+
+.footer_table td {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 0px;
+    vertical-align: text-top;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: yellow;
+}
+
+.legal_stuff {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
